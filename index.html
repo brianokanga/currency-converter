@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="./Assets/css/styles.css" />
+		<title>Currency Converter</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<h1 class="logo">
+				<span>Currency Converter</span>
+			</h1>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">blog</a></li>
+			</ul>
+		</nav>
+
+		<section class="converter">
+			<h1>Currency Converter</h1>
+			<p>Select the currency then enter the amount to get the exchange rate</p>
+			<div class="container">
+				<div class="currency">
+					<select id="currency-one">
+						<option value="SGD">SGD</option>
+						<option value="THB">THB</option>
+						<option value="TRY">TRY</option>
+						<option value="TWD">TWD</option>
+						<option value="UAH">UAH</option>
+						<option value="USD" selected>USD</option>
+						<option value="UYU">UYU</option>
+						<option value="VND">VND</option>
+						<option value="ZAR">ZAR</option>
+					</select>
+					<input type="number" id="amount-one" placeholder="1" />
+				</div>
+
+				<div class="currency">
+					<select id="currency-two">
+						<option value="CNY">CNY</option>
+						<option value="COP">COP</option>
+						<option value="CZK">CZK</option>
+						<option value="DKK">DKK</option>
+						<option value="DOP">DOP</option>
+						<option value="EGP">EGP</option>
+						<option value="EUR" selected>EUR</option>
+						<option value="FJD">FJD</option>
+						<option value="GBP">GBP</option>
+						<option value="GTQ">GTQ</option>
+					</select>
+					<input type="number" id="amount-two" placeholder="0" />
+				</div>
+			</div>
+		</section>
+
+		<script src="./Assets/js/app.js"></script>
+	</body>
+</html>
